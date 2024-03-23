@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Sourcing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* White background */
+            color: #00549f; /* L&T Blue foreground */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00549f; /* L&T Blue */
+        }
+        label {
+            font-weight: bold;
+            color: #00549f; /* L&T Blue */
+        }
+        select, input[type="number"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #00549f; /* L&T Blue */
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #00549f; /* L&T Blue */
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #003366; /* Darker Blue on Hover */
+        }
+        #lt-logo {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="lt_logo.png" alt="L&T Logo" id="lt-logo"> <!-- L&T Logo -->
+        <h2>Material Sourcing</h2>
+        <form action="#" method="post">
+            <label for="material">Select Material:</label>
+            <select name="material" id="material">
+                <option value="Steel">Steel</option>
+                <option value="Coal">Coal</option>
+                <option value="Wool">Wool</option>
+                <option value="Aluminium">Aluminium</option>
+                <option value="Crude_Oil">Crude Oil</option>
+                <option value="Natural_Gas">Natural Gas</option>
+                <option value="Nickel">Nickel</option>
+                <option value="Rubber">Rubber</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Platinum">Platinum</option>
+                <option value="Cement">Cement</option>
+                <option value="Tiles">Tiles</option>
+                <option value="Pipes">Pipes</option>
+                <option value="Valves">Valves</option>
+            </select>
+            <label for="quantity">Material Quantity (Metric Tonnes):</label>
+            <input type="number" name="quantity" id="quantity" min="1" required>
+            <label for="future_month">Select Future Month:</label>
+            <select name="future_month" id="future_month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <label for="future_year">Select Future Year:</label>
+            <input type="number" name="future_year" id="future_year" min="2024" value="2024">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
